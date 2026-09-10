@@ -6,6 +6,10 @@
     <title>Surat Lamaran Kerja - Muhammad Fattah Yasiin</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background: #f2f2f2;
@@ -21,6 +25,22 @@
             padding: 50px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             line-height: 1.7;
+        }
+
+        /* Tombol Kembali ke Portfolio */
+        .kembali {
+            display: inline-block;
+            margin-bottom: 30px;
+            padding: 10px 18px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .kembali:hover {
+            background: #444;
         }
 
         h1 {
@@ -47,6 +67,7 @@
             font-weight: bold;
         }
 
+        /* Tombol Lihat CV */
         .tombol {
             display: block;
             width: fit-content;
@@ -70,6 +91,29 @@
             .surat {
                 padding: 25px;
             }
+
+            .kembali {
+                font-size: 14px;
+            }
+        }
+
+        /* Saat dicetak / disimpan sebagai PDF */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .surat {
+                max-width: 100%;
+                box-shadow: none;
+                padding: 30px;
+            }
+
+            .kembali,
+            .tombol {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -77,6 +121,11 @@
 <body>
 
 <div class="surat">
+
+    <!-- Tombol kembali ke portfolio -->
+    <a href="index.html" class="kembali">
+        ← Kembali ke Portfolio
+    </a>
 
     <div class="tanggal">
         Pemalang, 10 September 2026
@@ -150,6 +199,7 @@
         </p>
     </div>
 
+    <!-- Tombol menuju CV -->
     <a href="cv.html" class="tombol">
         📄 Lihat CV
     </a>
