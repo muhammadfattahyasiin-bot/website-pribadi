@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Muhammad Fattah Yasiin</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f3f6;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+            border-radius: 10px;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #222;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #555;
+        }
+
+        .contact {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            border-bottom: 2px solid #222;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+
+        .section p {
+            margin-bottom: 8px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item h3 {
+            font-size: 17px;
+            margin-bottom: 3px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            background: #222;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            color: white;
+            background: #222;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        .print {
+            display: block;
+            margin: 25px auto 0;
+            padding: 12px 25px;
+            border: none;
+            background: #222;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .print:hover {
+            background: #444;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 10px;
+                padding: 22px;
+            }
+
+            .header h1 {
+                font-size: 25px;
+            }
+
+            .section h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+            }
+
+            .back,
+            .print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="index.html" class="back">← Kembali ke Portfolio</a>
+
+    <div class="header">
+        <h1>Muhammad Fattah Yasiin</h1>
+        <p>Mahasiswa Teknik Komputer</p>
+
+        <div class="contact">
+            📍 Pemalang, Jawa Tengah |
+            📱 6288227587846 |
+            ✉️ muhammadfattahyasiin@gmail.com
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Profil</h2>
+
+        <p>
+            Saya adalah mahasiswa Teknik Komputer di Politeknik Harapan Bersama
+            Tegal yang memiliki ketertarikan pada bidang teknologi, pemrograman,
+            pengembangan website, Internet of Things (IoT), serta dunia digital kreatif.
+        </p>
+
+        <p>
+            Saya merupakan pribadi yang tenang, mudah beradaptasi, senang mempelajari
+            hal baru, dan memiliki semangat untuk mengembangkan kemampuan di bidang teknologi.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Pendidikan</h2>
+
+        <div class="item">
+            <h3>Politeknik Harapan Bersama Tegal</h3>
+            <p>Program Studi Teknik Komputer</p>
+            <p>Mahasiswa</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Keahlian</h2>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">PHP</span>
+            <span class="skill">Python</span>
+            <span class="skill">C++</span>
+            <span class="skill">Arduino</span>
+            <span class="skill">ESP32</span>
+            <span class="skill">IoT</span>
+            <span class="skill">MySQL</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">Microsoft Office</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Proyek</h2>
+
+        <div class="item">
+            <h3>Website Portfolio Pribadi</h3>
+            <p>
+                Membuat website portfolio pribadi menggunakan HTML, CSS, dan JavaScript
+                serta melakukan deployment menggunakan GitHub Pages.
+            </p>
+        </div>
+
+        <div class="item">
+            <h3>Project Internet of Things</h3>
+            <p>
+                Mengembangkan beberapa project berbasis Arduino dan ESP32,
+                termasuk sistem monitoring dan kendali menggunakan IoT.
+            </p>
+        </div>
+
+        <div class="item">
+            <h3>Project Sistem Monitoring</h3>
+            <p>
+                Membuat konsep sistem monitoring berbasis sensor untuk memantau
+                kondisi suatu objek secara real-time.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Minat</h2>
+
+        <ul>
+            <li>Programming dan pengembangan website</li>
+            <li>Internet of Things (IoT)</li>
+            <li>Teknologi komputer</li>
+            <li>Fotografi dan editing foto/video</li>
+            <li>Eksplorasi teknologi baru</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Kontak</h2>
+
+        <p><strong>WhatsApp:</strong> 6288227587846</p>
+        <p><strong>Email:</strong> muhammadfattahyasiin@gmail.com</p>
+        <p><strong>Instagram:</strong> @yasiinpml123</p>
+        <p><strong>GitHub:</strong> muhammadfattahyasiin-bot</p>
+    </div>
+
+    <button class="print" onclick="window.print()">
+        🖨️ Cetak / Simpan sebagai PDF
+    </button>
+
+</div>
+
+</body>
+</html>
